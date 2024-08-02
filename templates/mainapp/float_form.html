@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-center align-items-center">
+  <form action="{% url 'mainapp:cat_list' %}" method="get">
+    {% csrf_token %}
+    <label>How many cats do you want to get?</label>
+    <input type="text" class="form-control" style="width: 150%;" name="cat_num">
+    <br>
+    <button type="submit" class="btn btn-outline-dark">Get cats!</button>
+  </form>
+</div>
