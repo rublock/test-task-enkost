@@ -1,10 +1,6 @@
 import logging
 
-from django.conf import settings
-from django.shortcuts import redirect
-from django.views.generic import ListView, TemplateView
-
-from .services.cat_api import get_cat
+from django.views.generic import TemplateView
 
 logger = logging.getLogger(__name__)
 
